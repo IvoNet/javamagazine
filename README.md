@@ -1,5 +1,5 @@
 # Java magazine articles
-Overview of articles I (co-)authored for the Dutch Java magazine, published by [NLJUG](www.nljug.org).
+Overview of articles I (co-)authored for the Dutch Java magazine, published by [NLJUG](http://www.nljug.org).
 
 ## LEGO Mindstorms EV3 - Java en LEGO hand in hand?
 Published in Java magazine 2014-01.    
