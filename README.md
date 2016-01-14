@@ -12,4 +12,4 @@ Co-written with Bert Jan Schrijver and Jeroen Resoort
 Published in Java magazine 2015-12
 Co-written with Bert Jan Schrijver and Koen Aben  
 
-[Download as PDF](https://github.com/IvoNet/javamagazine/blob/master/pdf/JavaOne2015.pdf)
+[Download as PDF](https://github.com/IvoNet/javamagazine/blob/master/pdf/Java magazine 2015-06 - JavaOne viert 20 jarig bestaan Java.pdf)
