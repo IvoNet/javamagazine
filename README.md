@@ -4,7 +4,7 @@ Overview of articles I (co-)authored for the Dutch Java magazine, published by [
 
 ## Apache Camel: Enterprise Integration op zijn best
 Published in Java magazine 2018-01.  
-[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202017-01%20-%20Camel.pdf)
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202018-01%20-%20Apache%20Camel.pdf)
 
 ## Let's get secure
 Published in Java magazine 2017-02.  
