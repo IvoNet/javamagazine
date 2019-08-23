@@ -2,6 +2,30 @@
 Overview of articles I (co-)authored for the Dutch Java magazine, published by [NLJUG](http://www.nljug.org).
 
 
+## Supersonisch Javageweld met Quarkus
+Published in Java magazine 2019-03.  
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202019-03%20-%20Supersonisch-Javageweld-met-Quarkus.pdf)
+
+## Java 12
+Published in Java magazine 2019-02.  
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202019-02%20-%20Java%2012.pdf)
+
+## CodeOne 2018
+Published in Java magazine 2019-01.  
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202019-01%20-%20CodeOne%202018.pdf)
+
+## Effective Java 3rd Edition
+Published in Java magazine 2018-04.  
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202018-04%20-%20Effective%20Java%203rd%20Edition.pdf)
+
+## Java Roadmap
+Published in Java magazine 2018-03.  
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202018-03%20-%20Java%20Roadmap.pdf)
+
+## Colofon 
+Published in Java magazine 2018-03.  
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202018-03%20-%20Colofon.pdf)
+
 ## Apache Camel: Enterprise Integration op zijn best
 Published in Java magazine 2018-01.  
 [Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202018-01%20-%20Apache%20Camel.pdf)
@@ -11,12 +35,10 @@ Published in Java magazine 2017-02.
 Co-written with Pieter van der Meer.  
 [Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202016-02%20-%20Lets%20get%20secure.pdf)
 
-
 ## JavaOne 2015 - JavaOne viert 20 jarig bestaan Java
 Published in Java magazine 2015-06.  
 Co-written with Bert Jan Schrijver and Koen Aben.  
 [Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202015-06%20-%20JavaOne%20viert%2020%20jarig%20bestaan%20Java.pdf)
-
 
 ## LEGO Mindstorms EV3 - Java en LEGO hand in hand?
 Published in Java magazine 2014-01.    
