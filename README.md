@@ -4,7 +4,7 @@ Overview of articles I (co-)authored for the Dutch Java magazine, published by [
 
 ## Java upgraden - Van Java 1.8 naar Java 9+
 Published in Java magazine 2020-01.  
-[Download as PDF]()
+[Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202018-04%20-%20Effective%20Java%203rd%20Edition.pdf)
 
 ## Java 13
 Published in Java magazine 2019-04.  
