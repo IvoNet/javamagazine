@@ -100,6 +100,125 @@ public class JFRApp {
 }
 ```
 
-```bash
+```java
+public class NPEApp {
+    public static void main(String[] args) {
+        final String[] s = new String[2];
+        s[1].length();
+    }
+}
+```
 
+
+```bash
+$ javac NPEApp.java && java NPEApp
+Exception in thread "main" java.lang.NullPointerException
+	at NPEApp.main(NPEApp.java:4)
+$ javac NPEApp.java && java -XX:+ShowCodeDetailsInExceptionMessages NPEApp
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<local1>[1]" is null
+	at NPEApp.main(NPEApp.java:4)
+```
+
+
+```java
+public class JEP359 {
+    public static void main(String[] args) {
+        record Point(int x, int y) {};
+
+        final Point p1 = new Point(1, 2);
+        final Point p2 = new Point(1, 2);
+
+        if (p1.equals(p2)) {
+        	System.out.println(p1);
+        }
+    }
+}
+```
+
+```bash
+$ javac -source 14 --enable-preview -Xlint:preview JEP359.java
+$ java --enable-preview JEP359
+JEP359.java:3: warning: [preview] records are a preview feature and may be removed in a future release.
+        record Point(int x, int y) {};
+        ^
+1 warning
+Point[x=1, y=2]
+```
+
+
+
+```java
+public class JEP368 {
+    public static void main(String[] args) {
+        final String s = """
+        	Deze regel heeft geen enter hier \
+        	en een enkele spatie tussen de quotes: "\s"
+        	groen \s
+        	rood  \s
+        	blauw \s
+        	""";
+        System.out.println(s);
+    }
+}
+```
+
+
+```bash
+$ javac -source 14 --enable-preview JEP368.java && java --enable-preview JEP368
+Note: JEP368.java uses preview language features.
+Note: Recompile with -Xlint:preview for details.
+Deze regel heeft geen enter hier en een enkele spatie tussen de quotes: " "
+groen
+rood
+blauw
+```
+
+```bash
+$ javac -source 14 --enable-preview -Xlint:preview JEP368.java && java --enable-preview JEP368
+JEP368.java:3: warning: [preview] text blocks are a preview feature and may be removed in a future release.
+        final String s = """
+                         ^
+JEP368.java:4: warning: [preview] text blocks are a preview feature and may be removed in a future release.
+        	Deze regel heeft geen enter hier \
+        	                                  ^
+JEP368.java:5: warning: [preview] text blocks are a preview feature and may be removed in a future release.
+        	en een enkele spatie tussen de quotes: "\s"
+        	                                         ^
+JEP368.java:6: warning: [preview] text blocks are a preview feature and may be removed in a future release.
+        	groen \s
+        	       ^
+JEP368.java:7: warning: [preview] text blocks are a preview feature and may be removed in a future release.
+        	rood  \s
+        	       ^
+JEP368.java:8: warning: [preview] text blocks are a preview feature and may be removed in a future release.
+        	blauw \s
+        	       ^
+6 warnings
+Deze regel heeft geen enter hier en een enkele spatie tussen de quotes: " "
+groen  
+rood  
+blauw  
+```
+
+
+
+```java
+import jdk.incubator.foreign.MemoryAddress;
+import jdk.incubator.foreign.MemorySegment;
+public class JEP370 {
+    public static void main(String[] args) {
+        try (MemorySegment segment = MemorySegment.allocateNative(1024)) {
+        	MemoryAddress base = segment.baseAddress();
+        	System.out.println(base);
+        }
+    }
+}
+```
+
+```bash
+$ javac -source 14 --enable-preview --add-modules jdk.incubator.foreign JEP370.java && java --enable-preview --add-modules jdk.incubator.foreign JEP370
+warning: using incubating module(s): jdk.incubator.foreign
+1 warning
+WARNING: Using incubator modules: jdk.incubator.foreign
+MemoryAddress{ region: MemorySegment{ id=0x683ceb2a limit: 1024 } offset=0x0 }
 ```
