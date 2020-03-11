@@ -2,6 +2,10 @@
 Overview of articles I (co-)authored for the Dutch Java magazine, published by [NLJUG](http://www.nljug.org).
 
 
+## Java upgraden - Van Java 1.8 naar Java 9+
+Published in Java magazine 2020-01.  
+[Download as PDF]()
+
 ## Java 13
 Published in Java magazine 2019-04.  
 [Download as PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202019-04%20-%20Java%2013.pdf)
