@@ -1,5 +1,5 @@
 # Java magazine articles
-Overview of articles I (co-)authored for the Dutch Java magazine, published by [NLJUG](http://www.nljug.org).
+Overview of articles I (co-)authored for the Dutch Java Magazine, published by [NLJUG](http://www.nljug.org).
 
 
 ## Java upgraden - Van Java 1.8 naar Java 9+
