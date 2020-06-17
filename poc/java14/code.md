@@ -4,15 +4,13 @@ kan code die nog niet herkend wordt toch goed formatteren
 
 ```java
 public class App {
-
     public static void main(String[] args) {
-        final Object obj = "ivonet.nl";
-        //        final Object obj = 42;
-
+        //Flip comment op de volgende twee regels om de else tak in te gaan
+        final Object obj = "Het Werkt!!!";
+        // final Object obj = 42;
         if(obj instanceof String s){
             // s is direct te gebruiken als: s = (String) obj;
-            System.out.println(s);
-            System.out.println(s.length());
+            System.out.println(s + " <- heeft lengte :" + s.length());
         } else{
             // s is hier niet beschikbaar
             System.out.println("Niet een string");
@@ -38,20 +36,22 @@ ivonet.nl
 
 
 ```bash
-# Compile the example code
-$ javac -source 14 --enable-preview -Xlint:preview App.java
-# Created a manifest for the jar
+$ javac -source 14 --enable-preview App.java
+Note: App.java uses preview language features.
+Note: Recompile with -Xlint:preview for details.
+# Maak een manifest file zoals deze...
 $ cat App.mf
 Manifest-Version: 1.0
 Main-Class: App
-# Create the jar
-$ jar cmf App.mf app.jar App.class App.java 
+# Maak de jar file...
+$ jar cmf App.mf app.jar App.class App.java
+# Package de applicatie naar een zogenaamde app-image...
 $ jpackage --name app --input . --main-jar app.jar \
   --type app-image --java-options "--enable-preview"
-# Lets see working
+WARNING: Using incubator modules: jdk.incubator.jpackage
+# Kijken of het werkt...
 $ ./app/bin/app
-ivonet.nl
-9
+Het Werkt!!! <- heeft lengte :12
 ```
 
 
@@ -124,10 +124,9 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String
 
 
 ```java
+record Point(int x, int y) {};
 public class JEP359 {
     public static void main(String[] args) {
-        record Point(int x, int y) {};
-
         final Point p1 = new Point(1, 2);
         final Point p2 = new Point(1, 2);
 
@@ -136,15 +135,16 @@ public class JEP359 {
         }
     }
 }
+
 ```
 
 ```bash
 $ javac -source 14 --enable-preview -Xlint:preview JEP359.java
-$ java --enable-preview JEP359
-JEP359.java:3: warning: [preview] records are a preview feature and may be removed in a future release.
-        record Point(int x, int y) {};
-        ^
+JEP359.java:1: warning: [preview] records are a preview feature and may be removed in a future release.
+record Point(int x, int y) {};
+^
 1 warning
+$ java --enable-preview JEP359
 Point[x=1, y=2]
 ```
 
