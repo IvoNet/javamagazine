@@ -1,0 +1,118 @@
+# curl -X POST -L -H "Content-Type: text/plain"
+#--data "https://docker-from-scratch.ivonet.nl/"
+#https://ivo2u.nl/api/
+POST https://ivo2u.nl/api/
+Content-Type: text/plain
+
+https://docker-from-scratch.ivonet.nl/
+
+###
+
+
+
+###
+GET https://httpbin.org/get?hallo=wereld
+
+### Check response status, headers, content-type and my-own-header
+GET https://{{host}}/get?hallo=wereld
+Accept: application/json
+my-own-header: Hello, world!
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+    client.test("Headers option exists", function() {
+        client.assert(response.body.hasOwnProperty("headers"), "Cannot find 'headers' option in response");
+    });
+
+    client.test("Response content-type is json", function() {
+        var type = response.contentType.mimeType;
+        client.assert(type === "application/json", "Expected 'application/json' but received '" + type + "'");
+    });
+    client.test("Should have my-own-header", function() {
+        client.assert(response.body.headers["My-Own-Header"] === "Hello, world!",
+       "Bye bye world.");
+    });
+%}
+
+
+###
+# Service that returns the headers it is send
+GET https://{{host}}/headers
+Accept: application/json
+my-own-header: Hello, world!
+
+> {%
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+    client.test("Headers option exists", function() {
+        client.assert(response.body.hasOwnProperty("headers"), "Cannot find 'headers' option in response");
+    });
+    client.test("Should have my-own-header", function() {
+        client.assert(response.body.headers["My-Own-Header"] === "Hello, world!",
+        "Bye bye world.");
+    });
+%}
+
+###
+GET https://{{host}}/headers
+Accept: application/json
+Global: {{foo}}
+
+###
+POST https://{{host}}/post
+Accept: {{json}}
+Content-Type: {{json}}
+
+{
+   "uuid": "{{$uuid}}",
+   "timestamp": "{{$timestamp}}",
+   "randomInt": "{{$randomInt}}"
+}
+
+###
+POST https://{{host}}/post
+Accept: {{json}}
+Content-Type: application/json
+
+{
+  "foo": "bar"
+}
+
+###
+GET https://{{host}}/bearer
+Authorization: Bearer {{token}}
+
+
+###
+POST https://{{host}}/post
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="file.csv"
+
+< ./file.csv
+--boundary
+Content-Disposition: form-data; name="advertType"
+
+1
+--boundary
+
+###
+# @no-log
+# @no-cookie-jar
+POST https://ivo2u.nl/api/
+Content-Type: text/plain
+
+https://docker-from-scratch.ivonet.nl/
+
+> {%
+   client.global.set("ivo2u", response.body)
+ %}
+
+###
+GET https://{{host}}/get?goto={{ivo2u}}
+Accept: application/json
