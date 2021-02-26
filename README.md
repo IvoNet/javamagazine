@@ -1,6 +1,17 @@
 # Java magazine articles
 Overview of articles I (co-)authored for the Dutch Java Magazine, published by [NLJUG](http://www.nljug.org).
 
+## JVM de smaakmaker van java
+Published in Java magazine 2020-03.  
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202020-04%20-%20JVM%20de%20smaakmaker%20van%20Java.pdf)
+
+## HTTP Client in IntelliJ IDEA
+Published in Java magazine 2020-04.  
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202020-04%20-%20HTTP%20Client%20in%20IntelliJ%20IDEA.pdf)
+
+## Java 15
+Published in Java magazine 2020-03.  
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202020-03%20-%20Java%2015.pdf)
 
 ## Java 14
 Published in Java magazine 2020-02.  
