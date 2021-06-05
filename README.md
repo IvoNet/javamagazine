@@ -1,6 +1,10 @@
 # Java magazine articles
 Overview of articles I (co-)authored for the Dutch Java Magazine, published by [NLJUG](http://www.nljug.org).
 
+## Java 16
+Published in Java magazine 2021-02
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202021-02%20-%20Java%2016.pdf)
+
 ## JVM de smaakmaker van java
 Published in Java magazine 2020-03.  
 [Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202020-04%20-%20JVM%20de%20smaakmaker%20van%20Java.pdf)
