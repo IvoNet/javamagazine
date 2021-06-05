@@ -2,7 +2,7 @@
 Overview of articles I (co-)authored for the Dutch Java Magazine, published by [NLJUG](http://www.nljug.org).
 
 ## Java 16
-Published in Java magazine 2021-02
+Published in Java magazine 2021-02.  
 [Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202021-02%20-%20Java%2016.pdf)
 
 ## JVM de smaakmaker van java
