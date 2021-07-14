@@ -1,5 +1,5 @@
-```java
 public class JEP406 {
+
     static String formatterPatternSwitch(Object o) {
         return switch (o) {
             case Integer i -> String.format("int %d", i);
@@ -9,6 +9,7 @@ public class JEP406 {
             default        -> o.toString();
         };
     }
+
     static void testPatternWithNull(String s) {
         switch (s) {
             case null -> System.out.println("Oops");
@@ -17,6 +18,7 @@ public class JEP406 {
             default -> System.out.println("Ok");
         }
     }
+
     public static void main(String[] args) {
         System.out.println(formatterPatternSwitch(42));
         System.out.println(formatterPatternSwitch(42L));
@@ -30,19 +32,3 @@ public class JEP406 {
         testPatternWithNull("other");
     }
 }
-
-
-```
-
-```java
-
-```
-```java
-
-```
-```java
-
-```
-```java
-
-```
