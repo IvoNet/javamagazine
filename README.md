@@ -3,7 +3,7 @@ Overview of articles I (co-)authored for the Dutch Java Magazine, published by [
 
 ## Java 17
 Published in Java magazine 2021-03.  
-[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202021-02%20-%20Java%2017.pdf)
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202021-03%20-%20Java%2017.pdf)
 
 ## Java 16
 Published in Java magazine 2021-02.  
