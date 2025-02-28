@@ -1,6 +1,14 @@
 # Java magazine articles
 Overview of articles I (co-)authored for the Dutch Java Magazine, published by [NLJUG](http://www.nljug.org).
 
+## Java 23
+Published in Java magazine 2023-04.  
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202024-04%20-%20Java%2023.pdf)
+
+## Java 22
+Published in Java magazine 2024-02.  
+[Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202024-02%20-%20Java%2022.pdf)
+
 ## Java 21
 Published in Java magazine 2023-04.  
 [Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20Magazine%202023-04%20-%20Java%2021.pdf)
