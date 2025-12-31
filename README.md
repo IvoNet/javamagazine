@@ -22,7 +22,7 @@ Published in Java magazine 2022-04.
 [Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202022-04%20-%20Java%2019.pdf)
 
 ## Java 18
-Published in Java magazine 2022-02.  
+Published in Java magazine 2022-02.  bla
 [Download PDF](https://github.com/IvoNet/javamagazine/raw/master/pdf/Java%20magazine%202022-02%20-%20Java%2018.pdf)
 
 ## Java 17
